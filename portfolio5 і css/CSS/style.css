@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;    
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+    background: linear-gradient(180deg, #010208 16.39%, #010206 20.51%, #040008 24.79%, #010101 30.46%, #010101 34.11%, #010101 36.21%, #010101 100%);
+    background: url(/img/background.png);
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    position: fixed;
+    z-index: 10;
+}
+
+.header__inner{
+    padding: 30px;
+    background: rgb(27, 27, 28);
+    height: 70px;
+    width: 1340px;
+    border-radius:50px;
+    box-shadow: 0px 0px 5px 5px rgb(58, 58, 58);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 27px;
+    color: #DEDEDE;
+}
+
+.header__navigation{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.home{
+    color:#DEDEDE;
+    text-decoration: none;
+    transition: color .2s linear;
+    margin: 0 25px;
+}
+
+.work{
+    color:#DEDEDE;
+    text-decoration: none;
+    transition: color .2s linear;
+    margin: 0 25px;
+}
+
+.aboud{
+    color:#DEDEDE;
+    text-decoration: none;
+    transition: color .2s linear;
+    margin: 0 25px;
+}
+.contact{
+    color: #ffffff;
+}
+
+.container{
+    width: 86.7%; /*maket 1400px, відступи з боків 96px, (1440 / 100) = 14.4(1% - 14.4px); 96 * 2 / 14.4 = 13.3%; 100% - 13.3% = 86.7%(width)*/
+    margin: 0 auto;
+}
+
+nav a:hover{
+    color:rgb(116, 116, 116);
+    border-radius:10px;
+    box-shadow: 0px 0px 5px 5px rgb(128, 13, 13);
+}
+
+.main{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    width: 100%;
+}
+
+.content{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'Work Sans';
+    font-style: normal;
+    margin-top: 160px;
+    font-weight: 700;
+    font-size: 56px;
+    color: #DEDEDE;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+}
+
+h2{
+    font-size: 36px;
+    margin-top: 145px;
+    color: #DEDEDE;
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.photo{
+    overflow: hidden;
+    width: 594px;
+    height: 490px;
+    border-radius: 16px;
+}
+
+.Works{
+    padding-top: 60px;
+    width: 1180px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.description{
+    margin-top: 24px;
+    padding-left: 20px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    color: #DEDEDE;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: left;
+    display: grid;
+    align-items: end;
+}
+
+h4{
+    font-family: fantasy;
+    font-size: 24px;
+}
+
+.text_1{
+    font-size: 18px;
+    color: #E3E4E6;
+}
+
+.button{
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid rgba(227, 228, 230, 0.55);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 260px;
+    height: 56px;
+    background: rgb(0, 0, 0,0.5);
+    color: #9D9D9D;
+}
+
+.button:hover{
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    color: #E3E4E6;
+}
+
+.aboud_me{
+    padding-top: 60px;
+    width: 1180px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+h3{
+    font-size: 42px;
+
+}
+
+.description_1{
+    margin-top: 24px;
+    padding-left: 20px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    color: #DEDEDE;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: left;
+    display: grid;
+    align-items: center;
+}
+
+.photos{
+    width: 596px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo1{
+    padding-right: 32px;
+    position: cent;
+    overflow: hidden;
+    width: 282px;
+    height: 408px;
+    border-radius: 16px;
+}
+
+.photo2{
+    overflow: hidden;
+    width: 282px;
+    height: 374px;
+    border-radius: 16px;
+}
+
+.photo3{
+    padding-top: 32px;
+    overflow: hidden;
+    width: 282px;
+    height: 375px;
+    border-radius: 16px;
+}
+
+.tittle__4{
+    margin-top: 240px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #DEDEDE;        
+}
+
+.text__2{
+    margin-top: 24px;
+    font-size: 26px;
+    text-align: center;
+    color: #959595;
+    line-height: 38px;
+}
+
+.mail2{
+    margin: 0 auto;
+    padding: 16px 48px;
+    width: 340px;
+    background: #9D9D9D;
+    border-radius: 4px;
+}
+
+.mail2__1{
+    margin-top: 50px;
+}
+
+.mail2:hover{   
+    color: #FFFFFF; 
+    background: rgba(50, 50, 50, 1);
+}
+
+.mymail{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.icon__mail{
+    margin-right: 16px;
+    height: 16px;
+    width: 20px;
+}
+.mymail:hover{
+    display:flex;
+    color: #FFFFFF;
+    background: rgba(50, 50, 50, 1);
+}
+.text__3{
+    font-size: 16px;
+    color: #959595;
+}
+
+.footer{
+    margin-top: 120px;
+    width: 100%;
+    height: 80px;
+    padding-top: 25px;
+    position: relative;
+    background: rgba(50, 50, 50, 1);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.footer__inner{
+    width: 86.7%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
